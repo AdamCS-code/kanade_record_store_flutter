@@ -2,10 +2,6 @@
 <summary> <b> Tugas 7: Elemen Dasar Flutter </b> </summary>
 
 
-## Penjelasan Proyek
-
-Aplikasi ini adalah antarmuka sederhana untuk Kanade Record Store, yang menampilkan beberapa fitur dasar seperti melihat daftar produk, menambah produk, dan logout. Proyek ini menggunakan Flutter dan beberapa widget untuk membangun struktur UI.
-
 ### 1. Apa yang Dimaksud dengan Stateless Widget dan Stateful Widget? Jelaskan Perbedaannya.
 
 - **Stateless Widget**: Stateless widget adalah widget yang **tidak memiliki keadaan (state)** yang dapat berubah setelah widget tersebut dibuat. Widget ini digunakan ketika kontennya statis dan tidak akan berubah selama runtime. Contoh widget stateless dalam Flutter adalah `Text`, `Icon`, atau widget yang hanya menampilkan informasi tetap. Di proyek ini, `MyApp` dan `MyHomePage` adalah contoh dari stateless widget karena tidak memiliki state yang berubah.
