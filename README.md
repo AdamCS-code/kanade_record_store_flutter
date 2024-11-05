@@ -1,4 +1,6 @@
-# Tugas 6
+<details>
+<summary> <b> Tugas 7: Elemen Dasar Flutter </b> </summary>
+
 
 ## Penjelasan Proyek
 
@@ -160,3 +162,4 @@ class ItemCard extends StatelessWidget {
   }
 }
 ```
+</details>
