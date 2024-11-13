@@ -159,3 +159,36 @@ class ItemCard extends StatelessWidget {
 }
 ```
 </details>
+<details>
+<summary> <b> Tugas 8: Flutter Navigation, Layouts, Forms, and Input Elements </b> </summary>
+
+### 1. Apa kegunaan const di Flutter? Jelaskan apa keuntungan ketika menggunakan const pada kode Flutter. Kapan sebaiknya kita menggunakan const, dan kapan sebaiknya tidak digunakan?
+const adalah jenis variabel yang immutable (tidak dapat diubah). Keuntungannya, const lebih hemat memori dibandingkan tipe variabel lainnya, seperti var. Waktu yang tepat untuk menggunakan const adalah ketika kita ingin menyimpan nilai yang tidak akan berubah dan sudah ditetapkan saat compile time, misalnya untuk daftar halaman pada drawer. Sebaiknya, const tidak digunakan jika nilai yang disimpan bersifat dinamis, baik yang hanya bisa diatur saat runtime maupun yang bisa berubah-ubah selama runtime.
+### 2. Jelaskan dan bandingkan penggunaan Column dan Row pada Flutter. Berikan contoh implementasi dari masing-masing layout widget ini!
+Column dan Row adalah widget layout dasar yang digunakan untuk mengatur tata letak widget dalam arah berdasarkan column dan row pada tabel umumnya. column menata letak widget secara horizontal, sementara row menata letak widget secara vertikal.
+Contoh penggunaan column:
+```
+child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+        ...
+        ]
+)
+```
+Contoh penggunaan row:
+```
+Row(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: [
+      InfoCard(title: 'NPM', content: npm),
+      InfoCard(title: 'Name', content: name),
+      InfoCard(title: 'Class', content: className),
+    ],
+  ),
+```
+### 3.  Sebutkan apa saja elemen input yang kamu gunakan pada halaman form yang kamu buat pada tugas kali ini. Apakah terdapat elemen input Flutter lain yang tidak kamu gunakan pada tugas ini? Jelaskan!
+### 4. Bagaimana cara kamu mengatur tema (theme) dalam aplikasi Flutter agar aplikasi yang dibuat konsisten? Apakah kamu mengimplementasikan tema pada aplikasi yang kamu buat?
+### 5. Bagaimana cara kamu menangani navigasi dalam aplikasi dengan banyak halaman pada Flutter?
+
+
+</details>

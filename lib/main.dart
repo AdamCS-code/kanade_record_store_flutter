@@ -1,6 +1,6 @@
 // Main Dart 
 import 'package:flutter/material.dart';
-import 'package:kanade_record_store/menu.dart';
+import 'package:kanade_record_store/screens/menu.dart';
 
 void main() {
   runApp(const MyApp());
