@@ -187,8 +187,10 @@ Row(
   ),
 ```
 ### 3.  Sebutkan apa saja elemen input yang kamu gunakan pada halaman form yang kamu buat pada tugas kali ini. Apakah terdapat elemen input Flutter lain yang tidak kamu gunakan pada tugas ini? Jelaskan!
+Pengambilan input melalui form yang saya implementasikan hanya menggunakan TextField. TextField digunakan untuk input title, description, dan price dari suatu produk. Alasannya karena saya merasa TextField sudah cukup untuk memenuhi ekspetasi saya terhadap form yang akan dibuat.
 ### 4. Bagaimana cara kamu mengatur tema (theme) dalam aplikasi Flutter agar aplikasi yang dibuat konsisten? Apakah kamu mengimplementasikan tema pada aplikasi yang kamu buat?
+Saya menggunakan ThemeData untuk menjaga agar tema dari aplikasi flutter tetap konsisten. Lebih detail lagi, saya memilih warna cyan sebagai warna utama dalam aplikasi ini. Sehingga pada left_drawer tetap sesuai dengan tema yang diberikan.
 ### 5. Bagaimana cara kamu menangani navigasi dalam aplikasi dengan banyak halaman pada Flutter?
-
+Flutter bekerja dengan sistem stack. Misalnya, saat pengguna menekan tombol, kita akan menambahkan (push) sebuah Route ke stack Navigator, sehingga halaman tersebut tampil di layar karena berada di posisi teratas. Jika pengguna menekan tombol untuk menuju halaman lain dari halaman tersebut, proses serupa terjadi, yaitu Route baru ditambahkan ke stack. Saat pengguna menekan tombol Back, Navigator akan melakukan pop pada stack (menghapus elemen teratas) dan menampilkan elemen berikutnya. Ini merupakan metode navigasi yang cocok untuk aplikasi mobile yang tidak memerlukan URL seperti di web. Ketika pengguna berada pada elemen terakhir di stack (biasanya halaman utama), keluar dari aplikasi akan menjadi aksi berikutnya.
 
 </details>
