@@ -194,3 +194,26 @@ Saya menggunakan ThemeData untuk menjaga agar tema dari aplikasi flutter tetap k
 Flutter bekerja dengan sistem stack. Misalnya, saat pengguna menekan tombol, kita akan menambahkan (push) sebuah Route ke stack Navigator, sehingga halaman tersebut tampil di layar karena berada di posisi teratas. Jika pengguna menekan tombol untuk menuju halaman lain dari halaman tersebut, proses serupa terjadi, yaitu Route baru ditambahkan ke stack. Saat pengguna menekan tombol Back, Navigator akan melakukan pop pada stack (menghapus elemen teratas) dan menampilkan elemen berikutnya. Ini merupakan metode navigasi yang cocok untuk aplikasi mobile yang tidak memerlukan URL seperti di web. Ketika pengguna berada pada elemen terakhir di stack (biasanya halaman utama), keluar dari aplikasi akan menjadi aksi berikutnya.
 
 </details>
+
+<details>
+<summary> <b> Tugas 9: Integrasi Layanan Web Django dengan Aplikasi Flutter </b> </summary>
+
+## 1. Jelaskan mengapa kita perlu membuat model untuk melakukan pengambilan ataupun pengiriman data JSON? Apakah akan terjadi error jika kita tidak membuat model terlebih dahulu?
+Pembuatan model dalam pengambilan atau pengiriman data JSON dapat memudahkan pengolahan data tersebut. Data yang diterima atau dikirim dapat sesuai dengan tipe data yang seharusnya. Adanya object memudahkan organisasi kode. Apabila tidak membuat model, source code akan menjadi rumit dan rentan terjadi kesalahan tipe data.
+## 2. Jelaskan fungsi dari library http yang sudah kamu implementasikan pada tugas ini
+Library HTTP yang sudah dibuat itu digunakan untuk request dan response dengan protokol HTTP. Sehingga app flutter dapat mengambil dan mengirim data.
+## 3. Jelaskan fungsi dari CookieRequest dan jelaskan mengapa instance CookieRequest perlu untuk dibagikan ke semua komponen di aplikasi Flutter.
+CookieRequest adalah mekanisme untuk menyimpan pengguna yang telah login supaya tidak perlu login berulang kali ketika berpindah page. 
+
+## 4. Jelaskan mekanisme pengiriman data mulai dari input hingga dapat ditampilkan pada Flutter.
+- pengguna memasukan data melalui form yang tersedia di app.
+- flutter mengolah data tersebut menjadi object, kemudian diubah lagi menjadi JSON.
+- Backend, dalam hal ini django, mengirimkan json tersebut ke server melalui HTTP request (POST).
+- Pengguna mengakses data melalui lihat produk atau sejenisnya, mengirimkan request (GET).
+- Django mengembalikan request berupa object json produk yang telah dibuat.
+
+## 5.  Jelaskan mekanisme autentikasi dari login, register, hingga logout. Mulai dari input data akun pada Flutter ke Django hingga selesainya proses autentikasi oleh Django dan tampilnya menu pada Flutter.
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step! (bukan hanya sekadar mengikuti tutorial).
+
+</details>
